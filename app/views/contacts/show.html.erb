@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<table>
+  <tr>
+    <td><b>タイトル</b></td>
+    <td><b>問い合わせ内容</b></td>
+  </tr>
+  <tr>
+    <td><%= @contact.title%></td>
+    <td><%= @contact.content %></td>
+  </tr>
+</table>
+
+<%= link_to 'Edit', edit_contact_path(@contact) %> |
+<%= link_to 'Back', contacts_path %>
